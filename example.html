@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <title>Page Title</title>
+    <script src='wow_bag_nav/bag.js'></script>
+    <link rel="stylesheet" type="text/css" href="wow_bag_nav/bag.css">
+    <script>
+        window.onload = function() {
+            NavBag.addItem("#", "wow_bag_nav/images/icon_mail.png", 0, 0)
+            NavBag.addItem("#", "wow_bag_nav/images/icon_choc.png", 0, 1)
+            NavBag.addItem("#", "wow_bag_nav/images/icon_quest.png", 1, 2)
+            NavBag.addItem("#", "wow_bag_nav/images/icon_cogwheel.png", 3, 3)
+            NavBag.toggle();
+        }
+    </script>
+    <style>
+        body {
+            background-image: url("wow_bag_nav/images/bg.jpg");
+            background-attachment: fixed;
+            background-position: center top;
+            background-repeat: no-repeat;
+            background-size: 100%;
+        }
+    </style>
+
+</head>
+<body>
+    <input type="button" value="show" onclick="show()">
+</body>
+</html>
+
